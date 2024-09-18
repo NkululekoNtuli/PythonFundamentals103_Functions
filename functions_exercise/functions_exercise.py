@@ -5,9 +5,13 @@
 # and performs calculations or actions based on those parameters.
 # Your task is to create a function that accepts 
 # two numbers as parameters and prints their sum.
-
+a = input("Enter first number>> ")
+b = input("Enter second number>> ")
 def add_numbers(a, b):
     # Your code here
+    print(a,"+",b)
+    sum = a + b
+    print("=", sum)
     pass
 
 # Exercise 2: Return Values
@@ -17,10 +21,16 @@ def add_numbers(a, b):
 # allowing you to reuse computed values.
 # Create a function that takes a list of numbers 
 # as a parameter and returns the sum of those numbers.
+numbers = []
+for i in range(5):
+    item = input("Enter a number>> ")
+    numbers.append(item)
 
 def calculate_sum(numbers):
     # Your code here
+    return(sum(numbers))
     pass
+
 
 # Exercise 3: Function Scoping
 # Instructions:
