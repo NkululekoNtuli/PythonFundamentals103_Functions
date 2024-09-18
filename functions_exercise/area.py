@@ -1,3 +1,4 @@
+import math
 """
     Calculate the area of a rectangle.
 
@@ -11,7 +12,10 @@
     Example:
         To calculate the area of a rectangle with a length of 5 units and a width of 3 units:
         >>> rectangle_area(5, 3)
-"""        
+"""
+def area_rect(lenth, width):
+    area = lenth * width
+    return(area)
 
 
 """
@@ -28,3 +32,6 @@
         >>> circle_area(4)
         50.26548245743669
 """
+def area_circ(radius):
+    area = math.pi * radius ** 2
+    return(area)

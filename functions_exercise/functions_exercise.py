@@ -5,13 +5,11 @@
 # and performs calculations or actions based on those parameters.
 # Your task is to create a function that accepts 
 # two numbers as parameters and prints their sum.
-a = input("Enter first number>> ")
-b = input("Enter second number>> ")
+
 def add_numbers(a, b):
     # Your code here
-    print(a,"+",b)
-    sum = a + b
-    print("=", sum)
+    sum_result = a + b
+    print(a,"+",b,"=", sum_result)
     pass
 
 # Exercise 2: Return Values
@@ -21,10 +19,6 @@ def add_numbers(a, b):
 # allowing you to reuse computed values.
 # Create a function that takes a list of numbers 
 # as a parameter and returns the sum of those numbers.
-numbers = []
-for i in range(5):
-    item = input("Enter a number>> ")
-    numbers.append(item)
 
 def calculate_sum(numbers):
     # Your code here
@@ -43,13 +37,15 @@ global_variable = "I am a global variable"
 
 def demonstrate_scoping():
     # Define a local variable here
+    local_variable = "I am a local variable"
     # Print both the global and local variables
+    print(global_variable + "and" +local_variable)
     pass
 
 # Exercise 4: Function Libraries
 # Instructions:
 # Create your own library of functions.
-# Build a collection of functions that can be imported 
+# Build a collection of functions that can be imported    
 # and used in multiple programs.
 # Rename/Convert the 'area.txt' file 
 # to a Python module (area.py file) containing two functions - 
@@ -57,15 +53,14 @@ def demonstrate_scoping():
     # and another that calculates the area of a circle.
 
 # Import your custom function library
-
-
+import area
 def calculate_area(length, width, radius):
     # Example 1: 
-    area_rectangle = 1 # Use the rectangle_area function from the Python module you created 
+    area_rectangle = area.area_rect(length, width) # Use the rectangle_area function from the Python module you created 
     print("Area of the rectangle:", area_rectangle)
 
     # Example 2: 
-    area_circle = 2 # Use the circle_area function from the Python module you created
+    area_circle = area.area_circ(radius) # Use the circle_area function from the Python module you created
     print("Area of the circle:", area_circle)
 
 if __name__ == "__main__":
@@ -73,4 +68,3 @@ if __name__ == "__main__":
     calculate_sum([1,2,3])
     demonstrate_scoping()
     calculate_area(5, 10, 4)
-    

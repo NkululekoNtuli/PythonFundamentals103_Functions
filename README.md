@@ -505,12 +505,12 @@ while something_something:
 
 def count_down(n):
 
-    if 'basecase check':
+    if n = 0:
         print("Blastoff!")
 
     else:
         #Do something here
-        count_down('modify me here')
+        count_down(n + 1)
 
 # Call the function with 5 as the starting point
 count_down(10)
